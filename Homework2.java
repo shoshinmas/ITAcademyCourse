@@ -25,7 +25,7 @@ public class Homework2 {
 
         int age = scanner.nextInt();
         Coupon(age);
-        boolean regular = true;
+        boolean regular = false;
         System.out.println("Is the customer new or regular?");
         String ifRegular = scanner.next();
             if (ifRegular == "regular") {
@@ -35,8 +35,8 @@ public class Homework2 {
                 regular = false;
             }
         if (regular = true) {
-            discount =+5;
-            System.out.println("Rabat dla klienta to " + discount+"%");
+            int newDiscount = discount + 5;
+            System.out.println("Rabat dla klienta to " + newDiscount+"%");
         }
         else {
             System.out.println("Rabat dla klienta to " + discount+"%");
