@@ -28,19 +28,16 @@ public class Homework2 {
         boolean regular = false;
         System.out.println("Is the customer new or regular?");
         String ifRegular = scanner.next();
-            if (ifRegular == "regular") {
-                regular = true;
-            }
-            else {
-                regular = false;
-            }
-        if (regular = true) {
+        if ("regular".equals(ifRegular)) {
+            regular = true;
+        } else {
+            regular = false;
+        }
+        if (regular == true) {
             int newDiscount = discount + 5;
             System.out.println("Rabat dla klienta to " + newDiscount+"%");
-        }
-        else {
+        } else {
             System.out.println("Rabat dla klienta to " + discount+"%");
         }
-
     }
 }
